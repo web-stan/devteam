@@ -1,0 +1,127 @@
+.hero {
+    &__slider {
+        padding: 30px 0 50px;
+
+        @media (min-width: 768px) {
+            padding: 50px 0 130px;
+        }
+    }
+}
+
+.slider {
+    overflow: hidden;
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: 600;
+
+        @media (min-width: 768px) {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-bottom: 40px;
+            font-size: 73px;
+            line-height: 95px;
+        }
+    }
+
+    &__slide {
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        @media (min-width: 1202px) {
+
+        }
+
+        @media (min-width: 1600px) {
+            padding: 0 150px;
+        }
+        
+        &.slick-slide {
+            display: flex;
+            cursor: grab;
+        }
+    }
+
+    &__slide_mod {
+        display: none; 
+
+        @media (min-width: 768px) {
+            display: flex
+        }
+    }
+
+    &__block_mod {
+        @media (min-width: 768px) {
+            flex-basis: 50%;
+        }
+    }
+
+    &__block_view {
+        flex-basis: 50%;
+
+        img {
+            // transform: translateX(29%);
+            @media (min-width: 1600px) {
+                transform: translateX(150px);
+            }
+        }
+    }
+
+    &__block_view {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        color: $textColor;
+        font-weight: normal;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media (min-width: 768px) {
+            justify-content: unset;
+            flex-wrap: nowrap;
+            text-align: unset;
+        }
+    }
+}
+
+// .section {
+//     overflow: hidden;
+
+//     @media (min-width: 768px) {
+//         display: flex;
+
+//     }
+//     &__content {
+//         flex: 0 0 100%;
+//     }
+
+//     &__body {
+//         width: 50%;
+//     }
+
+//     &__image {
+
+//         @media (min-width: 768px) {
+//             flex: 0 0 50%;
+//             transform: translateX(-100%);
+//         }
+//     }
+// }
