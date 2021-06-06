@@ -64,10 +64,9 @@
         height: 121px;
         padding: 18px;
         resize: none;
-        font-weight: 600 !important;   
 
         &::placeholder {
-            font-weight: 600 !important;
+            font-weight: 600 ;
         }
     }
 }
